@@ -1,5 +1,5 @@
 {
-  "baseUrl": "inex.ussl.info",
+  "baseUrl": "spider.ussl.co.il/inex",
   "protocol": "https",
   "hostingWPCOM": false,
   "useACF": true,
