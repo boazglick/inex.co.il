@@ -1,0 +1,81 @@
+/* כיווניות כללית */
+#n8n-chat {
+  direction: rtl;
+  text-align: right;
+  font-family: "Assistant", sans-serif;
+  position: relative;
+}
+
+/* טיזר מעל כפתור הצ'אט */
+#n8n-chat::before {
+  content: "עורך הדין תורן מחכה לשיחתך!";
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: #2b6cb0;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+/* צבעי רקע כלליים */
+#n8n-chat .n8n-chat-container {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* צבע כפתורים */
+#n8n-chat .n8n-chat-button {
+  background-color: #2b6cb0;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* צבע כפתור שלח */
+#n8n-chat .n8n-chat-input__submit {
+  background-color: #2a4365;
+  color: white;
+}
+
+/* גובה שורת ההקלדה */
+#n8n-chat .n8n-chat-input__field {
+  height: 48px;
+  font-size: 16px;
+}
+
+/* בועות טקסט */
+#n8n-chat .n8n-chat-message {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* טקסטים */
+#n8n-chat .n8n-chat-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a4365;
+}
+
+#n8n-chat .n8n-chat-subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+/* יישור כפתור התחלה */
+#n8n-chat .n8n-chat-get-started {
+  text-align: center;
+}
+
+/* הגדלה במחשב שולחני */
+@media (min-width: 768px) {
+  #n8n-chat .n8n-chat-container {
+    width: calc(100% + 20px) !important;
+    height: calc(100% + 50px) !important;
+    max-height: none !important;
+  }
+}
